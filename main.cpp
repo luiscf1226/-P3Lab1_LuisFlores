@@ -54,7 +54,47 @@ int main(int argc, char** argv) {
 			}
 			cout<<"La respuesta es : "<<acum<<endl;
 		}
-	}
-
+		if(menu==3){
+			double n=0;
+			int t=0;
+			cout<<"Ingrese n: "<<endl;
+			cin>>n;
+			cout<<"Ingrese t: "<<endl;
+			cin>>t;
+			if(t<10){
+				cout<<" T tiene que ser mayor a 10"<<endl;
+			}
+			double resp=0;
+			float inicio=0;
+			float mitad=0;
+			float final=n;
+			double cc=0;
+			double gg=0;
+			double acum=0;
+			
+			for(int i=1;i<n+1;i++){
+				cout<<"Iteracion  "<<i<<"  final : "<<final<<" inicio: "<<inicio;
+				mitad=(inicio+final)/2;
+				gg=mitad*mitad;
+				cout<<" mitad por :  "<<gg<<endl;
+				if(gg>n){
+					inicio=inicio;
+					final=mitad;
+				}
+				if(gg<n){
+					inicio=mitad;
+					final=final;
+				}
+				if((mitad*mitad)==n){
+				resp=mitad;
+				break;
+			}
+				 resp=mitad;
+			}
+			cout<<"respuesta: "<<mitad<<endl;
+			
+	
+	    }
+   } 
 	return 0;
 }
