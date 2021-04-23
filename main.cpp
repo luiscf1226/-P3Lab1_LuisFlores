@@ -8,11 +8,9 @@ int main(int argc, char** argv) {
 		cout<<"Escoja una Opcion "<<endl<<"1. Ejercisio 1"<<endl<<"2. Ejercisio 2"<<endl<<"3. Ejercisio 3"<<endl<<"4.Salirse"<<endl;
 		cin>>menu;
 		if(menu==1) {
-			
 			int num;
 			int n1=1;
 			int n2=0;
-
 			cout<<"Ingrese numero: "<<endl;
 			cin>> num;
 			if(num<0) {
@@ -23,7 +21,6 @@ int main(int argc, char** argv) {
 					if(m%2==0 && i%2==0) {
 						cout<<n2;
 					}
-
 					else {
 						if(m%2!= 0 && i%2!=0) {
 							cout<<n2;
@@ -32,11 +29,9 @@ int main(int argc, char** argv) {
 							cout<<n1;
 						}
 					}
-
 				}
 				cout << endl;
 			}
-
 		}
 		if(menu==2){
 			int num;
@@ -49,8 +44,7 @@ int main(int argc, char** argv) {
 			for(int i=1;i<=num;i++){
 				float ac=0;
 				ac+=i-1;
-				acum+=(2*i)*ac;
-				
+				acum+=(2*i)*ac;	
 			}
 			cout<<"La respuesta es : "<<acum<<endl;
 		}
@@ -70,8 +64,7 @@ int main(int argc, char** argv) {
 			float final=n;
 			double cc=0;
 			double gg=0;
-			double acum=0;
-			
+			double acum=0;	
 			for(int i=1;i<n+1;i++){
 				cout<<"Iteracion  "<<i<<"  final : "<<final<<" inicio: "<<inicio;
 				mitad=(inicio+final)/2;
